@@ -26,6 +26,7 @@ EOF
 # download imwheel GUI script
 file=~/Documents/mousewheel.sh
 # wget -O $file http://www.nicknorton.net/mousewheel.sh
+wget -O $file https://github.com/vincentjjjjj/ubuntu-postinstall-script/blob/main/mousewheel/mousewheel.sh
 chmod +x $file
 
 # start program
