@@ -9,9 +9,9 @@ sudo ufw enable
 sudo snap remove gtk-common-themes
 sudo snap remove $(snap list | awk '!/^Name|core$/ {print $1}')
 sudo apt autoremove --purge -y snapd gnome-software-plugin-snap
-sudo echo "Package: snapd
+echo "Package: snapd
 Pin: release *
-Pin-Priority: -1" > /etc/apt/preferences.d/nosnap.pref
+Pin-Priority: -1" | sudo tee /etc/apt/preferences.d/nosnap.pref
 rm -rf ~/snap/
 
 
