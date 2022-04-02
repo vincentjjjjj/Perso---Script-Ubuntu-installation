@@ -1,7 +1,7 @@
 #
 # Execute sudo without password. [Be careful]
 #
-echo "$USER ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$USER
+echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$USER
 
 #
 # Reduce swap to force your Linux system to use your RAM, instead of your hard drive
