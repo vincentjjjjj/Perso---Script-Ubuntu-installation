@@ -9,8 +9,8 @@ echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$USER
 isswap=$(grep -c vm.swappiness /etc/sysctl.conf)
 if [[ "$isswap" -eq "0" ]]
 then
-	sudo echo "vm.swappiness=10
-    " >> /etc/sysctl.conf
+	echo "vm.swappiness=10
+	" | sudo tee -a /etc/sysctl.conf
 fi
 
 #
