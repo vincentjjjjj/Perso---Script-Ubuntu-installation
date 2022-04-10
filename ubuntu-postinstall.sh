@@ -33,7 +33,7 @@ rm -rf /etc/xml/ /usr/share/apport/
 echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections
 sudo apt update && apt upgrade -y
 sudo apt install -y ubuntu-restricted-extras rar
-sudo # apt install ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
+# sudo apt install -y ttf-mscorefonts-installer rar unrar libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
 
 sudo apt install -y gnome-tweaks gnome-shell-extension-prefs
 sudo apt install -y firefox firefox-locale-en synaptic gdebi gufw tlp fonts-crosextra-carlito fonts-crosextra-caladea

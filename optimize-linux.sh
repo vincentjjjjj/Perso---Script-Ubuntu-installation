@@ -26,4 +26,4 @@ fi
 # Enable firewall
 #
 sudo apt install -y ufw gufw
-ufw enable
+sudo ufw enable
