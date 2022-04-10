@@ -192,6 +192,7 @@ dconf reset -f /org/gnome/shell/extensions/arcmenu/
 dconf write /org/gnome/shell/extensions/arcmenu/menu-hotkey "'Super_L'"
 dconf write /org/gnome/shell/extensions/arcmenu/activate-on-hover true
 dconf write /org/gnome/shell/extensions/arcmenu/menu-layout "'Brisk'"
+dconf write /org/gnome/shell/extensions/arcmenu/menu-height 560
 dconf write /org/gnome/shell/extensions/arcmenu/menu-button-icon "'Distro_Icon'"
 dconf write /org/gnome/shell/extensions/arcmenu/distro-icon 5
 
