@@ -45,9 +45,10 @@ dconf write /org/cinnamon/desktop/background/slideshow/image-source "'xml:///usr
 
 # Context menu vscode
 echo "[Nemo Action]
-Name=Open in VS Code
-Comment=Open in VS Code
+Name=Open with Code
+Comment=Open with Code
 Exec=code %F
 Icon-Name=com.visualstudio.code
 Selection=Any
 Extensions=dir;" >> vscode.nemo_action
+
