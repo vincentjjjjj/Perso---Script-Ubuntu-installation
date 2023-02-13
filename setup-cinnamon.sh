@@ -43,3 +43,11 @@ dconf write /org/cinnamon/desktop/background/slideshow/image-source "'xml:///usr
 # dconf write /org/cinnamon/desktop/background/picture-uri "'file:///usr/share/backgrounds/linuxmint-ulyssa/sberger_swing_of_life.jpg'"
 # dconf write /org/cinnamon/desktop/background/picture-options "'zoom'"
 
+# Context menu vscode
+echo "[Nemo Action]
+Name=Open in VS Code
+Comment=Open in VS Code
+Exec=code %F
+Icon-Name=com.visualstudio.code
+Selection=Any
+Extensions=dir;" >> vscode.nemo_action
