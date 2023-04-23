@@ -77,6 +77,8 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings "['
 # xdg-open https://extensions.gnome.org/extension/3628/arcmenu/
 # xdg-open https://extensions.gnome.org/extension/2087/desktop-icons-ng-ding/
 # xdg-open https://extensions.gnome.org/extension/615/appindicator-support/
+# xdg-open https://extensions.gnome.org/extension/4470/media-controls/
+
 # # xdg-open https://extensions.gnome.org/extension/906/sound-output-device-chooser/
 # # xdg-open https://extensions.gnome.org/extension/7/removable-drive-menu/
 # xdg-open https://extensions.gnome.org/extension/1112/screenshot-tool/
@@ -87,8 +89,8 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings "['
 # ## xdg-open https://extensions.gnome.org/extension/779/clipboard-indicator/
 
 
-dconf reset /org/gnome/shell/enabled-extensions
-dconf reset /org/gnome/shell/disabled-extensions
+# dconf reset /org/gnome/shell/enabled-extensions
+# dconf reset /org/gnome/shell/disabled-extensions
 
 #
 # desktop icons
@@ -106,18 +108,19 @@ dconf write /org/gnome/shell/extensions/ding/arrangeorder "'KIND'"
 #
 dconf reset -f /org/gnome/shell/extensions/dash-to-panel/
 dconf write /org/gnome/shell/extensions/dash-to-panel/appicon-margin 1
-dconf write /org/gnome/shell/extensions/dash-to-panel/appicon-padding 7
+dconf write /org/gnome/shell/extensions/dash-to-panel/appicon-padding 10
 dconf write /org/gnome/shell/extensions/dash-to-panel/hot-keys true
 dconf write /org/gnome/shell/extensions/dash-to-panel/panel-positions "'{\"0\":\"TOP\"}'"
-dconf write /org/gnome/shell/extensions/dash-to-panel/panel-sizes "'{\"0\":32}'"
+dconf write /org/gnome/shell/extensions/dash-to-panel/panel-sizes "'{\"0\":40}'"
 # dconf write /org/gnome/shell/extensions/dash-to-panel/panel-element-positions "'{\"0\":[{\"element\":\"showAppsButton\",\"visible\":false,\"position\":\"stackedTL\"},{\"element\":\"activitiesButton\",\"visible\":false,\"position\":\"stackedTL\"},{\"element\":\"leftBox\",\"visible\":true,\"position\":\"stackedTL\"},{\"element\":\"taskbar\",\"visible\":true,\"position\":\"stackedTL\"},{\"element\":\"centerBox\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"rightBox\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"systemMenu\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"dateMenu\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"desktopButton\",\"visible\":false,\"position\":\"stackedBR\"}]}'"
 dconf write /org/gnome/shell/extensions/dash-to-panel/panel-element-positions "'{\"0\":[{\"element\":\"showAppsButton\",\"visible\":false,\"position\":\"stackedTL\"},{\"element\":\"activitiesButton\",\"visible\":false,\"position\":\"stackedTL\"},{\"element\":\"leftBox\",\"visible\":true,\"position\":\"stackedTL\"},{\"element\":\"taskbar\",\"visible\":true,\"position\":\"stackedTL\"},{\"element\":\"centerBox\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"rightBox\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"dateMenu\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"systemMenu\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"desktopButton\",\"visible\":false,\"position\":\"stackedBR\"}]}'"
 dconf write /org/gnome/shell/extensions/dash-to-panel/dot-position "'TOP'"
 dconf write /org/gnome/shell/extensions/dash-to-panel/dot-style-unfocused "'METRO'"
 dconf write /org/gnome/shell/extensions/dash-to-panel/trans-use-custom-opacity true
-dconf write /org/gnome/shell/extensions/dash-to-panel/trans-panel-opacity 0.90000000000000002
-dconf write /org/gnome/shell/extensions/dash-to-panel/tray-padding 4
-dconf write /org/gnome/shell/extensions/dash-to-panel/status-icon-padding 8
+dconf write /org/gnome/shell/extensions/dash-to-panel/trans-panel-opacity 0.70000000000000007
+dconf write /org/gnome/shell/extensions/dash-to-panel/hide-overview-on-startup true
+dconf write /org/gnome/shell/extensions/dash-to-panel/tray-padding -1
+dconf write /org/gnome/shell/extensions/dash-to-panel/status-icon-padding -1
 dconf write /org/gnome/shell/extensions/dash-to-panel/show-favorites false
 dconf write /org/gnome/shell/extensions/dash-to-panel/isolate-workspaces true
 dconf write /org/gnome/shell/extensions/dash-to-panel/isolate-monitors true
@@ -192,7 +195,10 @@ dconf reset -f /org/gnome/shell/extensions/arcmenu/
 dconf write /org/gnome/shell/extensions/arcmenu/menu-hotkey "'Super_L'"
 dconf write /org/gnome/shell/extensions/arcmenu/activate-on-hover true
 dconf write /org/gnome/shell/extensions/arcmenu/menu-layout "'Windows'"
-dconf write /org/gnome/shell/extensions/arcmenu/menu-height 600
+# dconf write /org/gnome/shell/extensions/arcmenu/menu-layout "'Eleven'"
+dconf write /org/gnome/shell/extensions/arcmenu/pinned-app-list "@as []"
+dconf write /org/gnome/shell/extensions/arcmenu/button-padding 4
+dconf write /org/gnome/shell/extensions/arcmenu/menu-height 700
 dconf write /org/gnome/shell/extensions/arcmenu/menu-button-icon "'Menu_Icon'"
 dconf write /org/gnome/shell/extensions/arcmenu/arc-menu-icon 15
 
