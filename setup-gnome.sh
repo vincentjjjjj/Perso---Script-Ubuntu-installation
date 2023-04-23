@@ -13,6 +13,7 @@ dconf write /org/gnome/desktop/session/idle-delay "uint32 900"
 dconf write /org/gnome/settings-daemon/plugins/color/night-light-enabled true
 dconf write /org/gnome/settings-daemon/plugins/color/night-light-schedule-automatic false
 dconf write /org/gnome/settings-daemon/plugins/color/night-light-schedule-from "19.0"
+dconf write /org/gnome/desktop/search-providers/disabled "['org.gnome.Boxes.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Characters.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Photos.desktop', 'firefox.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Calculator.desktop']"
 
 # fonts
 dconf write /org/gnome/desktop/interface/font-name "'Cantarell 10'"
@@ -108,10 +109,10 @@ dconf write /org/gnome/shell/extensions/ding/arrangeorder "'KIND'"
 #
 dconf reset -f /org/gnome/shell/extensions/dash-to-panel/
 dconf write /org/gnome/shell/extensions/dash-to-panel/appicon-margin 1
-dconf write /org/gnome/shell/extensions/dash-to-panel/appicon-padding 10
+dconf write /org/gnome/shell/extensions/dash-to-panel/appicon-padding 7
 dconf write /org/gnome/shell/extensions/dash-to-panel/hot-keys true
 dconf write /org/gnome/shell/extensions/dash-to-panel/panel-positions "'{\"0\":\"TOP\"}'"
-dconf write /org/gnome/shell/extensions/dash-to-panel/panel-sizes "'{\"0\":40}'"
+dconf write /org/gnome/shell/extensions/dash-to-panel/panel-sizes "'{\"0\":35}'"
 # dconf write /org/gnome/shell/extensions/dash-to-panel/panel-element-positions "'{\"0\":[{\"element\":\"showAppsButton\",\"visible\":false,\"position\":\"stackedTL\"},{\"element\":\"activitiesButton\",\"visible\":false,\"position\":\"stackedTL\"},{\"element\":\"leftBox\",\"visible\":true,\"position\":\"stackedTL\"},{\"element\":\"taskbar\",\"visible\":true,\"position\":\"stackedTL\"},{\"element\":\"centerBox\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"rightBox\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"systemMenu\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"dateMenu\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"desktopButton\",\"visible\":false,\"position\":\"stackedBR\"}]}'"
 dconf write /org/gnome/shell/extensions/dash-to-panel/panel-element-positions "'{\"0\":[{\"element\":\"showAppsButton\",\"visible\":false,\"position\":\"stackedTL\"},{\"element\":\"activitiesButton\",\"visible\":false,\"position\":\"stackedTL\"},{\"element\":\"leftBox\",\"visible\":true,\"position\":\"stackedTL\"},{\"element\":\"taskbar\",\"visible\":true,\"position\":\"stackedTL\"},{\"element\":\"centerBox\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"rightBox\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"dateMenu\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"systemMenu\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"desktopButton\",\"visible\":false,\"position\":\"stackedBR\"}]}'"
 dconf write /org/gnome/shell/extensions/dash-to-panel/dot-position "'TOP'"
