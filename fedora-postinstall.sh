@@ -19,4 +19,4 @@ dnf -y swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
 # Install Flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 # Paramtrage GNOME
-dnf install -y gnome-packagekit gnome-tweaks gnome-extensions-app gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator
+dnf install -y gnome-packagekit gnome-tweaks gnome-extensions-app
