@@ -16,10 +16,10 @@ dconf write /org/gnome/settings-daemon/plugins/color/night-light-schedule-from "
 dconf write /org/gnome/desktop/search-providers/disabled "['org.gnome.Boxes.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Characters.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Photos.desktop', 'firefox.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Calculator.desktop']"
 
 # fonts
-dconf write /org/gnome/desktop/interface/font-name "'Cantarell 10'"
-dconf write /org/gnome/desktop/interface/document-font-name "'Cantarell 10'"
-dconf write /org/gnome/desktop/interface/monospace-font-name "'Monospace 10'"
-dconf write /org/gnome/desktop/wm/preferences/titlebar-font "'Cantarell Bold 10'"
+dconf write /org/gnome/desktop/interface/font-name "'Noto Sans 10'"
+dconf write /org/gnome/desktop/interface/document-font-name "'Noto Sans 10'"
+dconf write /org/gnome/desktop/interface/monospace-font-name "'Noto Sans Mono 10'"
+dconf write /org/gnome/desktop/wm/preferences/titlebar-font "'Noto Sans Bold 10'"
 # dconf reset /org/gnome/desktop/interface/monospace-font-name
 
 # nautilus
