@@ -23,6 +23,9 @@ dconf write /org/cinnamon/sounds/maximize-enabled false
 dconf write /org/cinnamon/sounds/unmaximize-enabled false
 dconf write /org/cinnamon/sounds/notification-enabled false
 
+# disable alt clic to move windows
+dconf write /org/cinnamon/desktop/wm/preferences/mouse-button-modifier ''
+
 # hotkeys
 dconf write /org/cinnamon/desktop/keybindings/custom-keybindings/custom0/binding "['<Super>v']"
 dconf write /org/cinnamon/desktop/keybindings/custom-keybindings/custom0/command "'/usr/bin/diodon'"
